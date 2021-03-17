@@ -1,0 +1,479 @@
+.form__field {
+  color: #34363a;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
+  quotes: auto;
+}
+
+.form__label {
+  color: #848484;
+  cursor: default;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
+  quotes: auto;
+}
+
+.form__label__code {
+  color: #848484;
+  cursor: pointer;
+  font-family: "Roboto Mono",Menlo,"Bitstream Vera Sans Mono",Consolas,Courier,monospace;
+  font-size: 12px;
+  line-height: 18px;
+  quotes: auto;
+}
+
+div#format.css-19cb5cc-container {
+  box-sizing: border-box;
+  color: #34363a;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
+  position: relative;
+  quotes: auto;
+}
+div.css-1hmptjn-control {
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #34363a;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  justify-content: space-between;
+  line-height: 22.5px;
+  min-height: 40px;
+  outline: 0;
+  position: relative;
+  quotes: auto;
+  transition: all 100ms;
+
+  &:hover {
+    border-color: #d7d7d7;
+  }
+}
+
+div.css-1hwfws3 {
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #34363a;
+  cursor: default;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
+  overflow: hidden;
+  padding: 2px 8px;
+  position: relative;
+  quotes: auto;
+}
+
+@import url(https://use.typekit.net/iok7hkr.css);
+
+.form {
+  fieldset {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-color: #f0f0f0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    legend {
+      font-size: 19px;
+      font-size: 1.1875rem;
+      padding: 0 10px;
+      margin: 0 -10px;
+    }
+  }
+
+  hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.form__label {
+  display: block;
+  color: #848484;
+  margin-bottom: .375rem;
+  position: relative;
+
+  svg {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 5px;
+    fill: #848484;
+  }
+}
+
+.form__label__code {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  font-family: Roboto Mono,Menlo,Bitstream Vera Sans Mono,Consolas,Courier,monospace;
+  font-size: 12px;
+  font-size: .75rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.form__label {
+  &:focus .form__label__code, &:hover .form__label__code {
+    opacity: 1;
+  }
+}
+
+a.form__label__code {
+  text-decoration: none;
+  color: #848484;
+
+  &:focus, &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form__field {
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__field--switch .form__hint {
+  margin-left: 55px;
+}
+
+.form__field--less-margin {
+  margin-bottom: 0.75rem;
+}
+
+.form__field--black-label .form__label {
+  color: #34363a;
+}
+
+.form__field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  > {
+    * {
+      margin-right: 10px;
+    }
+
+    :last-child {
+      margin-right: 0;
+    }
+
+    span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+}
+
+.form__field--inline {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+
+  [type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week] {
+    width: auto;
+    display: inline-block;
+  }
+}
+
+.form__actions {
+  margin-top: 1.5rem;
+}
+
+.form__field--invalid {
+  .form__label {
+    color: #ff5e49;
+
+    a {
+      color: #ff5e49;
+    }
+  }
+
+  > {
+    [type=email], textarea {
+      border-color: #ff5e49;
+    }
+  }
+
+  [type=color], [type=date], [type=datetime-local], [type=datetime], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week] {
+    border-color: #ff5e49;
+  }
+
+  > {
+    [type=email]:focus, textarea:focus {
+      -webkit-box-shadow: 0 0 0 3px rgba(255, 94, 73, 0.2);
+      box-shadow: 0 0 0 3px rgba(255, 94, 73, 0.2);
+    }
+  }
+
+  [type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus {
+    -webkit-box-shadow: 0 0 0 3px rgba(255, 94, 73, 0.2);
+    box-shadow: 0 0 0 3px rgba(255, 94, 73, 0.2);
+  }
+}
+
+.form__global-error {
+  color: #ff5e49;
+  margin-bottom: 0.75rem;
+
+  a {
+    color: #ff5e49;
+  }
+}
+
+.form__error {
+  color: #ff5e49;
+  line-height: 1.2;
+  margin-top: .375rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.form__hint {
+  line-height: 1.2;
+  margin-top: .375rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #848484;
+}
+
+.form__hint__docs {
+  margin-top: .375rem;
+  display: block;
+  text-decoration: underline;
+  color: #70c8dc;
+  color: var(--accent-color);
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+    fill: #70c8dc;
+    fill: var(--accent-color);
+  }
+}
+
+.form__input--large {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.form__input--small {
+  font-size: 0.8em;
+}
+
+.form__input--code {
+  font-family: Roboto Mono, Menlo, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+}
+
+.form__input--milli {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.form__block {
+  margin-bottom: 2.25rem;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.form__field--with-prefix {
+  position: relative;
+
+  .form__field__prefix {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    width: 2em;
+    text-align: right;
+    z-index: 2;
+  }
+
+  .form__field__input * {
+    padding-left: 2.5em;
+  }
+}
+
+.form__or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  > :last-child {
+    margin-left: 7px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.input-group {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #f0f0f0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+
+  input {
+    border-width: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.input-group--inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.input-group__addon {
+  color: #34363a;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13.5px;
+  line-height: 20.25px;
+  quotes: auto;
+}
+.input-group__addon {
+  padding: 0 10px;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &:first-child {
+    border-left-width: 0;
+  }
+
+  &:last-child {
+    border-right-width: 0;
+  }
+}
+
+.input-group__addon--button {
+  text-decoration: none;
+  border: 0;
+  color: #848484;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: center;
+  display: block;
+  margin-left: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &:focus, &:hover {
+    opacity: 0.9;
+  }
+}
+
+.input-group--code {
+  .input-group__addon, input {
+    font-family: Roboto Mono, Menlo, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  }
+}
+
+.input-group--small {
+  .input-group__addon, input {
+    font-size: 0.9em;
+  }
+}
+
+.input-group.input-group--small {
+  color: #34363a;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
+  quotes: auto;
+}
+
+input#slug {
+  color: #34363a;
+  cursor: text;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13.5px;
+  quotes: auto;
+}
+
+
+.form__hint {
+  color: #848484;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 14.4px;
+  list-style: outside none none;
+  quotes: auto;
+  text-align: left;
+}
+
+// switch
+.SwitchInput {
+  color: #34363a;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13.5px;
+  line-height: 20.25px;
+  quotes: auto;
+}
+
+.SwitchInput__label {
+  color: #34363a;
+  font-family: colfax-web,Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13.5px;
+  line-height: 20.25px;
+  quotes: auto;
+}
