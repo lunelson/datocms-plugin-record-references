@@ -59,6 +59,7 @@
         <ul>
           {#each itemType.items as item}
             <li>
+              <!-- svelte-ignore a11y-invalid-attribute -->
               <a
                 href=""
                 class="edit-link"
